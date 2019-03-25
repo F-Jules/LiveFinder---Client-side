@@ -12,6 +12,7 @@ import UserRelatedConcerts from "./UserRelatedConcerts";
 import TopFrenchPage from "./TopFrenchPage";
 import AttendingEvent from "./AttendingEvent";
 import Nav from "./nav";
+import axios from "axios";
 
 class Connected extends Component {
   constructor(props) {
@@ -24,9 +25,26 @@ class Connected extends Component {
     };
   }
 
+  sendGeoloc() {
+    navigator.geolocation.getCurrentPosition(function(geoloc) {
+      console.log(geoloc.coords);
+      axios
+        .post("http://localhost:8888/yolo", {
+          lat: geoloc.coords.latitude,
+          long: geoloc.coords.longitude
+        })
+        .then(res => {
+          console.log(res);
+        })
+        .catch(err => {
+          console.error(err);
+        });
+    });
+  }
+
   componentDidMount() {
     const { match, history } = this.props;
-
+    //this.sendGeoloc();
     if (match.params.loginToken) {
       postTokenLogin(match.params).then(response => {
         console.log("Logged-In");
@@ -73,7 +91,7 @@ class Connected extends Component {
                 </div>
                 <h1>Hi {this.props.currentUser.fullName}</h1>
                 <hr />
-                <h2>Kean for new concerts?</h2>
+                <h2>Looking for new concerts?</h2>
                 <p>
                   Check out the next live bands arround, any trending concerts
                   arround any more.
