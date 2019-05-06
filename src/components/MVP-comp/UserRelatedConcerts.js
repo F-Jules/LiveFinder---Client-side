@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { getRelatedConcerts } from "../api.js";
+import { getRelatedConcerts } from "../API/api.js";
 
 import "./UserRelatedConcerts.css";
 import { Link } from "react-router-dom";

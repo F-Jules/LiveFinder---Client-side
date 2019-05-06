@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import { concertInfo } from "../api.js";
-import { addConcert } from "../api.js";
-import Nav from "./nav";
+import { concertInfo, addConcert } from "../API/api";
+import Nav from "../Dashboard-comp/nav";
 
 import "./ConcertInfo.css";
 

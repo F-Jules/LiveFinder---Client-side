@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { getTopPlaylist } from "../api.js";
+import { getTopPlaylist } from "../../API/api";
 
 class PlayListPlayer extends Component {
   constructor(props) {

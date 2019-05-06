@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./spotiPlayer.css";
-import { spotiPlayer } from "../api.js";
+import { spotiPlayer } from "../../API/api";
 
 function sliceToArray(array) {
   const randomNumber = Math.floor(Math.random() * 14) + 1;

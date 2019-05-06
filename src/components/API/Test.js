@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { getTest } from "../api";
+import { getTest } from "./api";
 
 class TestPage extends Component {
   constructor(props) {

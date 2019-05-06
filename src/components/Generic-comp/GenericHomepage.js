@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { genericInfos } from "../api.js";
-import NextConcertsParis from "./GenericNextConcerts";
+import { genericInfos } from "../API/api.js";
+import NextConcertsParis from "../Generic-comp/GenericNextConcerts";
 import { Link } from "react-router-dom";
 
 import "./GenericHomepage.css";

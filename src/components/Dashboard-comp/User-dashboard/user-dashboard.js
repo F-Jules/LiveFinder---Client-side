@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { deleteConcert } from "../api.js";
+import { deleteConcert } from "../../API/api";
 import SpotiPlayer from "./SpotiPlayer.js";
-import Nav from "./nav.js";
+import Nav from "../nav.js";
 import PlayListPlayer from "./playListPlayer.js";
 function getConcertAddress(concert) {
   return `/concert-info/${concert.id}`;

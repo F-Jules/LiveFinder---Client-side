@@ -1,18 +1,18 @@
 import React, { Component } from "react";
 import { Switch, Route, NavLink } from "react-router-dom";
 import "./App.css";
-import HomePage from "./components/HomePage.js";
-import NotFound from "./components/NotFound.js";
-import Connected from "./components/connected";
-import TopFrenchPage from "./components/TopFrenchPage";
-import UserRelatedConcerts from "./components/UserRelatedConcerts";
-import GenericInfosHome from "./components/GenericHomepage";
-import ConcertInfo from "./components/ConcertInfo.js";
-import TestPage from "./components/Test";
-import Dashboard from "./components/user-dashboard";
-import SpotiPlayer from "./components/SpotiPlayer.js";
-import AttendingEvent from "./components/AttendingEvent";
-import PlayListPlayer from "./components/playListPlayer";
+import HomePage from "./components/Dashboard-comp/HomePage";
+import NotFound from "./components/Dashboard-comp/NotFound.js";
+import Connected from "./components/Auth-comp/connected";
+import TopFrenchPage from "./components/MVP-comp/TopFrenchPage";
+import UserRelatedConcerts from "./components/MVP-comp/UserRelatedConcerts";
+import GenericInfosHome from "./components/Generic-comp/GenericHomepage";
+import ConcertInfo from "./components/MVP-comp/ConcertInfo";
+import TestPage from "./components/API/Test";
+import Dashboard from "./components/Dashboard-comp/User-dashboard/user-dashboard";
+import SpotiPlayer from "./components/Dashboard-comp/User-dashboard/SpotiPlayer";
+import AttendingEvent from "./components/MVP-comp/AttendingEvent";
+import PlayListPlayer from "./components/Dashboard-comp/User-dashboard/playListPlayer";
 
 class App extends Component {
   constructor(props) {

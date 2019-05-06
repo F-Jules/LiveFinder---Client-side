@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { signUpSpotify } from "../api.js";
+import { signUpSpotify } from "../API/api.js/index.js";
 
 class HomePage extends Component {
   constructor(props) {

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./GenericNextConcerts.css";
-import { nextConcertsParis } from "../api";
+import { nextConcertsParis } from "../API/api";
 
 function getConcertAddress(concert) {
   return `/concert-info/${concert.id}`;
